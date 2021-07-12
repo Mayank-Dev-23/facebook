@@ -1,5 +1,6 @@
 import 'tailwindcss/tailwind.css'
 import {Provider} from "next-auth/client"
+import "../public/style.css"
 
 function MyApp({ Component, pageProps }) {
 
