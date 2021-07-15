@@ -40,7 +40,7 @@
     align-items: center;
 }
 /* SEARCHBOX */
-.header_search{
+.headersearch{
     display: none;
     align-items: center;
        margin-left: 3px;
@@ -48,17 +48,18 @@
         padding: 8px;
         border-radius: 9999px;
 }
-.input{
+.searchinput{
     background-color: transparent;
     outline: none;
     flex-shrink: 1;
+    margin-left: 3px;;
 }
 .SearchIcon{
     height:1.5rem;
     color:#cbd5e0;
 }
 @media only screen and (min-width: 1280px){
-    .header_search{
+    .headersearch{
         display: inline-flex;
         
 

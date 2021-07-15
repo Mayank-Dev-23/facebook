@@ -28,10 +28,11 @@ function Header() {
           layout="fixed"
           objectFit="contain"
         />
-        <div className=" header_search ">
-          <SearchIcon className="SearchIcon" />
+        <div className=" headersearch ">
+        <SearchIcon className="SearchIcon" />
           <input
-            className=" input"
+          
+            className="searchinput"
             type="text"
             placeholder="Search Facebook"
           />
