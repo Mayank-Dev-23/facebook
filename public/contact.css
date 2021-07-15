@@ -1,0 +1,71 @@
+.contact{
+    display:none;
+    flex-direction: column;
+    width: 15rem;
+    margin-top: 1.25rem;
+    padding: 0.2rem;
+}
+
+.contact_text{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:#a0aec0;
+    margin-bottom: 1.25rem;
+
+}
+
+.contact_icon{
+    display:flex;
+justify-content:space-evenly;
+
+}
+
+.contactside{
+    height:1.4rem;
+    margin-left: 0.7rem;
+    cursor: pointer;
+}
+.title{
+    font-size: 1.25rem;
+    line-height: 1.75rem
+}
+
+@media (min-width:1024px){
+    .contact{
+        display: inline-flex;
+    }
+}
+
+
+/* PERSON */
+
+.person {
+display:flex;
+position: relative;
+align-items: center;
+margin-bottom: 0.5rem;
+border-radius: 0.125rem;
+cursor: pointer;
+padding: 0.4rem;
+
+}
+.person_Image {
+    border-radius: 9999px;
+}
+.person:hover{
+    background-color:#e2e8f0;
+}
+.person_text{
+    margin-left: 4rem;
+}
+
+.active_dot{
+    height:0.75rem;
+    width:0.75rem;
+    border-radius:9999px;
+    background-color:rgba(16, 185, 129);
+    position:absolute;
+    bottom:0.4rem;
+    left:2rem;
+}

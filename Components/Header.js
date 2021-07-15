@@ -18,9 +18,9 @@ function Header() {
 
     const [session] = useSession();
   return (
-    <div className="flex items-center  sticky top-0 z-50 bg-white shadow-md p-1 lg:px-5 ">
+    <div className=" header ">
       {/* LEFT */}
-      <div className="flex items-center">
+      <div className=" left_header">
         <Image
           src="https://links.papareact.com/5me"
           width={40}
@@ -28,10 +28,10 @@ function Header() {
           layout="fixed"
           objectFit="contain"
         />
-        <div className=" hidden xl:inline-flex items-center ml-2 space-x-2 bg-gray-100 p-2 rounded-full">
-          <SearchIcon className="h-6 text-gray-400" />
+        <div className=" header_search ">
+          <SearchIcon className="SearchIcon" />
           <input
-            className="   bg-transparent outline-none flex-shrink"
+            className=" input"
             type="text"
             placeholder="Search Facebook"
           />
@@ -39,9 +39,9 @@ function Header() {
       </div>
 
       {/* CENTER */}
-      <div className="flex  justify-center flex-grow">
-        <div className="flex  space-x-4 md:space-x-2">
-          <HeaderIcon active Icon={HomeIcon} />
+      <div className="center_header">
+        <div className="center  ">
+          <HeaderIcon  classNaem="active"  Icon={HomeIcon} />
           <HeaderIcon Icon={FlagIcon} />
           <HeaderIcon Icon={PlayIcon} />
           <HeaderIcon Icon={ShoppingCartIcon} />
@@ -51,23 +51,23 @@ function Header() {
 
       {/* RIGHT */}
 
-      <div className="flex items-center">
+      <div className="right">
         {/* PROFILE PIC */}
-        <Image 
+        <img 
         onClick={signout}
-         className="rounded-full hover:animate-pulse cursor-pointer "
-        src={session.user.image} height={30} width={30} layout="fixed" objectFit="contain" />
+         className="Image "
+        src={session.user.image}  />
 
         <p 
            
-        className=" hidden xl:inline-flex whitespace-nowrap font-semiBold font-sans-serrif pr-2 pl-1">
+        className=" username">
         {session.user.name}
       
         </p>
-        <ViewGridIcon className="  hidden xl:inline-flex p-2 h-10 w-10 bg-gray-200 rounded-full  text-gray-700 cursor-pointer hover:bg-gray-300 ml-1 " />
-        <ChatIcon className="  hidden xl:inline-flex p-2 h-10 w-10 bg-gray-200 rounded-full  text-gray-700 cursor-pointer hover:bg-gray-300  ml-1" />
-        <BellIcon className="  hidden xl:inline-flex p-2 h-10 w-10  bg-gray-200 rounded-full  text-gray-700 cursor-pointer hover:bg-gray-300 ml-1" />
-        <ChevronDownIcon className="hidden xl:inline-flex p-2 h-10 w-10 bg-gray-200  rounded-full  text-gray-700 cursor-pointer ml-1 hover:bg-gray-300" />
+        <ViewGridIcon className="  rightIcon   " />
+        <ChatIcon className="  rightIcon " />
+        <BellIcon className=" rightIcon" />
+        <ChevronDownIcon className=" rightIcon" />
       </div>
     </div>
   );

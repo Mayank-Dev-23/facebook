@@ -78,17 +78,17 @@ function InputBox() {
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-md text-gray-500 font-medium mt-6 p-2">
-      <div className="flex space-x-4 p-4 items-center">
+    <div className="postbox">
+      <div className="postbox_image">
         <img
-          className="rounded-full"
+          
           src={session.user.image}
           width="40"
           height="40"
           layout="fixed"
         />
 
-        <form className="flex flex-1">
+        <form >
           <input
             ref={inputRef}
             className="outline-none rounded-full h-10 bg-gray-100 flex-grow px-5"

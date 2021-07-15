@@ -1,0 +1,118 @@
+.sidebar{
+    padding:0.5rem;
+   
+    margin-top: 1.25rem;
+    max-width: 600px;
+
+}
+
+@media only screen and (min-width:1280px){
+    .sidebar{
+        min-width: 300px;
+    }
+    
+}
+
+.SidebarRow{
+    display:flex;
+    align-items:center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+}
+@media only screen and (min-width:640px){
+    .SidebarRow{
+        padding: 0.75em;
+
+    }
+    
+   
+    
+}
+@media only screen and (min-width:1024px){
+    .SidebarRow:hover{
+        background-color: #bbbfc248;
+    }
+}
+
+.sidebarIcon{
+    height:1.7rem;
+    width: 1.7em;
+    color: #1859dbc6;
+}
+
+.sidebarIconName{
+    display:none;
+    font-weight: 500;
+    margin-left: 20px;
+}
+@media only screen and (min-width: 640px) {
+    .sidebarIconName{
+        display: inline-flex;
+    }
+}
+
+
+/* STORIES */
+
+.stories{
+    display: flex;
+    justify-content: space-evenly;
+ 
+}
+.storycard{
+    position: relative;
+    cursor: pointer;
+    transition:all 0.1s ease-in;
+}
+
+.storyimage{
+   
+    height:3.3rem;
+    width:3.3rem;
+    border-radius:9999px;
+}
+.storyname{
+    display: none;
+}
+
+
+
+
+.profileimage{
+    border-radius: 9999px;
+    height:3rem;
+    width: 3rem;
+    cursor: pointer;
+   
+    position:absolute;
+    top: 10px;
+    left:10px;
+    display:none; 
+    transition: all 0.7s ease-in;
+    
+    
+}
+.storycard:hover{
+filter: brightness(0.75);
+animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+transform: scale(1.1);
+
+
+}
+@media (min-width: 1024px){
+ 
+  .storyimage{
+      height:12rem;
+      width:9rem;
+      border-radius:15px;
+      padding:5px
+  }
+  .profileimage{
+      display:inline-flex;
+      border: 3px solid #1859dbc6;
+  }
+
+ 
+}

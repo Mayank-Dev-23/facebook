@@ -1,0 +1,69 @@
+.feed{
+    display:flex;
+    flex-grow: 1;
+    height: 100vh;
+    padding-bottom: 11rem;
+    padding-top: 1.5rem;
+    margin-right: 1rem;
+    overflow-y: auto;
+    
+
+}
+.feed::-webkit-scrollbar{
+    display:none;
+}
+
+.feed_posts{
+    margin-right: auto;
+    margin-left:auto;
+    max-width: 28rem;
+}
+@media screen and (min-width: 768px) {
+    .feed_posts{
+        max-width: 32rem;
+    }
+}
+
+@media  screen and (min-width:1024px){
+    .feed_posts{
+        max-width:42rem;
+    }
+
+}
+
+@media screen and (min-width:1280px){
+    .feed{
+        margin-right: 10rem;
+    }
+}
+
+
+
+/* INPUTBOX */
+
+.postbox{
+    background-color: white;
+    border-radius:0.75rem;
+     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+     color: rgba(107, 114, 128);
+     font-weight: 500;
+     margin-top: 1.5rem;
+     padding: 0.5rem;
+
+}
+
+.postbox_image{
+    display: flex;
+    padding: 1rem;
+    align-items:center;
+
+
+}
+.postbox_image >img{
+    margin-right: 1rem;
+    border-radius:9999px;
+}
+.postbox_image >form{
+    display: flex;
+    flex:110%;
+}
