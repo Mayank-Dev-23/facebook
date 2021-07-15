@@ -41,7 +41,9 @@
     width: 1.7em;
     color: #1859dbc6;
 }
-
+.sidebarimage{
+    border-radius: 9999px;
+}
 .sidebarIconName{
     display:none;
     font-weight: 500;

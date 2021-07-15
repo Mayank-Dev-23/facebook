@@ -8,7 +8,7 @@ function SidebarRow({src,Icon,title}) {
             {src && (
                 <a href={session.user.image}>
             <Image 
-            className="rounded-full"
+            className="sidebarimage"
             src={src} 
             width={30}
             height={30}
