@@ -91,7 +91,8 @@ function InputBox() {
         <form >
           <input
             ref={inputRef}
-            className="outline-none rounded-full h-10 bg-gray-100 flex-grow px-5"
+            
+            className="input"
             type="text"
             placeholder={`What's on your mind ${session.user.name}?`}
           />

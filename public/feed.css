@@ -67,3 +67,23 @@
     display: flex;
     flex:110%;
 }
+.input{
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    border-radius: 9999px;
+    height: 2.5rem;
+    background-color:rgba(243, 244, 246);
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    display:flex;
+    flex-grow: 1;
+}
+
+/* the image which we choose to post */
+.imageviewer{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items: center;
+cursor: pointer;
+}
