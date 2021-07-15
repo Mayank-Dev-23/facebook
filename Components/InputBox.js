@@ -80,18 +80,11 @@ function InputBox() {
   return (
     <div className="postbox">
       <div className="postbox_image">
-        <img
-          
-          src={session.user.image}
-          width="40"
-          height="40"
-          layout="fixed"
-        />
+        <img src={session.user.image} width="40" height="40" layout="fixed" />
 
-        <form >
+        <form>
           <input
             ref={inputRef}
-            
             className="input"
             type="text"
             placeholder={`What's on your mind ${session.user.name}?`}
@@ -104,28 +97,26 @@ function InputBox() {
         {imagetopost && (
           <div
             onClick={Removeimage}
-            className="flex flex-col items-center justify-center cursor-pointer transition duration-200 transform hover:scale-105
-         filter hover:brightness-75
-         "
+            className="imageviewer "
           >
-            <img className="  h-12 object-contain " src={imagetopost} />
-            <p className="text-xs text-red-500 font-semiBold">Remove</p>
+            <img className=" imageviewer_img " src={imagetopost} />
+            <p className="imageviewer_remove">Remove</p>
           </div>
         )}
       </div>
 
-      <div className="flex justify-evenly p-2 border-t">
-        <div className="flex items-center space-x-1 flex-grow hover:bg-gray-100 cursor-pointer justify-center p-2 rounded-xl ">
-          <VideoCameraIcon className="h-7 text-red-600" />
-          <p className="text-xs">Live video</p>
+      <div className="icon_container">
+        <div className="icon_container_child ">
+          <VideoCameraIcon className="videoicon" />
+          <p className="icon_container_childtext">Live video</p>
         </div>
 
         <div
           onClick={() => filepickerRef.current.click()}
-          className="flex items-center space-x-1 flex-grow hover:bg-gray-100 cursor-pointer justify-center p-2 rounded-xl "
+          className="icon_container_child "
         >
-          <CameraIcon className="h-7 text-green-500" />
-          <p className="text-xs">Photos/Videos</p>
+          <CameraIcon className="CameraIcon" />
+          <p className="icon_container_childtext">Photos/Videos</p>
           <input
             onChange={addimagetopost}
             ref={filepickerRef}
@@ -134,9 +125,9 @@ function InputBox() {
           />
         </div>
 
-        <div className="flex items-center space-x-1 flex-grow hover:bg-gray-100 cursor-pointer justify-center p-2 rounded-xl ">
-          <EmojiHappyIcon className="h-7 text-yellow-400" />
-          <p className="text-xs">Feeling/Activity</p>
+        <div className="icon_container_child">
+          <EmojiHappyIcon className="emoji" />
+          <p className="icon_container_childtext">Feeling/Activity</p>
         </div>
       </div>
     </div>

@@ -4,46 +4,41 @@ import Image from "next/image";
 
 function Post({ name, email, message, image, postImage, timestamp }) {
   return (
-    <div className="flex flex-col">
-      <div className="p-5 bg-white mt-5 rounded-t-lg shadow-sm">
-        <div className="flex items-center space-x-2">
-          <Image className="rounded-full" src={image} width={40} height={40} />
+    <div className="post_container">
+      <div className="post_container2">
+        <div className="post_container3">
+          <Image className="post_containerimg" src={image} width={40} height={40} />
 
-          <div>
-            <p className="font-medium">{name}</p>
-            <p className="text-xs text-gray-500">
+          <div className="name_container">
+            <p className="name">{name}</p>
+            <p className="date">
               {new Date(timestamp?.toDate()).toLocaleString()}
             </p>
           </div>
         </div>
-        <p className="pt-4">{message}</p>
+        <p className="message">{message}</p>
       </div>
       {postImage && (
         <a href={postImage}>
           <div
-            className="relative h-56 md:h-96 bg-white transition
-            duration transform hover:scale-105 
-              "
-          >
+            className="postimage" >
             <Image src={postImage} objectFit="cover" layout="fill" />
           </div>
         </a>
       )}
-      <div className="flex items-center justify-between bg-white rounded-sm shadow-md text-gray-400
-      bo2der-t2 
-      ">
-        <div  className="flex items-center cursor-pointer space-x-1 hover:bg-gray-100 p-2 rounded-sml">
-          <ThumbUpIcon className="h-5" />
-          <p className="text-xs">like</p>
+      <div className="footer">
+        <div  className="footer_container2">
+          <ThumbUpIcon className="footer_icon" />
+          <p className="footer_icon_name">like</p>
         </div>
-        <div  className="flex items-center cursor-pointer space-x-1 hover:bg-gray-100 p-2 rounded-sm">
+        <div  className="footer_container2">
       
-          <ChatIcon className="h-5" />
-          <p className="text-xs">comment</p>
+          <ChatIcon className="footer_icon" />
+          <p className="footer_icon_name">comment</p>
         </div>
-        <div  className="flex items-center cursor-pointer space-x-1 hover:bg-gray-100 p-2 rounded-xl">
-          <ShareIcon className="h-5" />
-          <p className="text-xs">share</p>
+        <div  className="footer_container2">
+          <ShareIcon className="footer_icon" />
+          <p className="footer_icon_name">share</p>
         </div>
       </div>
     </div>

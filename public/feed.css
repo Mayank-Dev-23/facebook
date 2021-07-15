@@ -86,4 +86,66 @@ flex-direction:column;
 justify-content:center;
 align-items: center;
 cursor: pointer;
+transition: all 0.1s ease-in;
+
+}
+.imageviewer_img{
+    height:3rem;
+    object-fit: contain;
+}
+.imageviewer_remove{
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: rgba(239, 68, 68);
+    font-weight: 600;
+}
+
+.imageviewer:hover{
+    transform: scale(1.1);
+    filter: brightness(0.70);
+    
+}
+
+
+.icon_container{
+    display:flex;
+    justify-content:space-evenly;
+    padding: 0.5rem;
+    border-top-width:1px;
+}
+.icon_container_child{
+  display:flex;
+  align-items: center;
+  flex-grow: 1;
+  cursor: pointer;
+  justify-content:center;
+  padding:0.5rem;
+  border-radius: 0.75rem;
+  
+
+    
+}
+.icon_container_childtext{
+    font-size: 0.75rem;
+    line-height: 1rem;
+    margin-left: 0.24rem;
+}
+
+.icon_container_child:hover{
+    background-color: rgba(243, 244, 246);
+
+}
+.CameraIcon{
+height: 1.75rem;
+color: rgba(16, 185, 129);
+}
+
+.videoicon{
+height: 1.75rem;
+color: rgba(220, 38, 38);
+}
+
+.emoji{
+    height: 1.75rem;
+    color: rgba(251, 191, 36);
 }
